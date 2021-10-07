@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Documento PEST - QSoft </title>
+
+      <!-- Meta -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="description" content="Mega Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+      <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
+      <meta name="author" content="codedthemes" />
+      <!-- Favicon icon -->
+    
+    <link rel="icon" href="assets/images/icono.png" type="image/x-icon">
+    <!-- Google font-->     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.min.css">
+    <!-- waves.css -->
+    <link rel="stylesheet" href="assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+    <!-- themify-icons line icon -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/font-awesome/css/font-awesome.min.css">
+    <!-- Notification.css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/notification/notification.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css/css/animate.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+  </head>
+
+  <body>
+  <!-- Pre-loader start -->
+  <div class="theme-loader">
+      <div class="loader-track">
+          <div class="preloader-wrapper">
+              <div class="spinner-layer spinner-blue">
+                  <div class="circle-clipper left">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                      <div class="circle"></div>
+                  </div>
+              </div>
+              <div class="spinner-layer spinner-red">
+                  <div class="circle-clipper left">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                      <div class="circle"></div>
+                  </div>
+              </div>
+            
+              <div class="spinner-layer spinner-yellow">
+                  <div class="circle-clipper left">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                      <div class="circle"></div>
+                  </div>
+              </div>
+            
+              <div class="spinner-layer spinner-green">
+                  <div class="circle-clipper left">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                      <div class="circle"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Pre-loader end -->
+  <div id="pcoded" class="pcoded">
+      <div class="pcoded-overlay-box"></div>
+      <div class="pcoded-container navbar-wrapper">
+          <nav class="navbar header-navbar pcoded-header">
+              <div class="navbar-wrapper">
+                  <div class="navbar-logo">
+                      <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
+                          <i class="ti-menu"></i>
+                      </a>
+                      <div class="mobile-search waves-effect waves-light">
+                          <div class="header-search">
+                              <div class="main-search morphsearch-search">
+                                  <div class="input-group">
+                                      <span class="input-group-addon search-close"><i class="ti-close"></i></span>
+                                      <input type="text" class="form-control" placeholder="Enter Keyword">
+                                      <span class="input-group-addon search-btn"><i class="ti-search"></i></span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <a href="index.html">
+                          <img class="img-fluid" src="assets/images/logo.png" alt="Theme-Logo" />
+                      </a>
+                      <a class="mobile-options waves-effect waves-light">
+                          <i class="ti-more"></i>
+                      </a>
+                  </div>
+                
+                  <div class="navbar-container container-fluid">
+                      <ul class="nav-left">
+                          <li>
+                              <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+                          </li>
+                          <!-- <li class="header-search">
+                              <div class="main-search morphsearch-search">
+                                  <div class="input-group">
+                                      <span class="input-group-addon search-close"><i class="ti-close"></i></span>
+                                      <input type="text" class="form-control">
+                                      <span class="input-group-addon search-btn"><i class="ti-search"></i></span>
+                                  </div>
+                              </div>
+                          </li> -->
+                          <li>
+                              <a href="#!" onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
+                                  <i class="ti-fullscreen"></i>
+                              </a>
+                          </li>
+                      </ul>
+                      <ul class="nav-right">
+                          <li class="header-notification">
+                              <a href="#!" class="waves-effect waves-light">
+                                  <i class="ti-bell"></i>
+                                  <span class="badge bg-c-red"></span>
+                              </a>
+                              <ul class="show-notification">
+                                  <li>
+                                      <h6>Notificaciones</h6>
+                                      <label class="label label-danger">Nuevo</label>
+                                  </li>
+                                  <li class="waves-effect waves-light">
+                                      <div class="media">
+                                          <img class="d-flex align-self-center img-radius"  src="assets/images/avatar-2.jpg" alt="Generic placeholder image">
+                                          <div class="media-body">
+                                              <h5 class="notification-user">John Doe</h5>
+                                              <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                              <span class="notification-time">30 minutes ago</span>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="waves-effect waves-light">
+                                      <div class="media">
+                                          <img class="d-flex align-self-center img-radius" src="assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                          <div class="media-body">
+                                              <h5 class="notification-user">Joseph William</h5>
+                                              <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                              <span class="notification-time">30 minutes ago</span>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="waves-effect waves-light">
+                                      <div class="media">
+                                          <img class="d-flex align-self-center img-radius" src="assets/images/avatar-3.jpg" alt="Generic placeholder image">
+                                          <div class="media-body">
+                                              <h5 class="notification-user">Sara Soudein</h5>
+                                              <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                              <span class="notification-time">30 minutes ago</span>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="user-profile header-notification">
+                              <a href="#!" class="waves-effect waves-light">
+                                  <img src="assets/images/user.png" id="Avatar1" class="img-radius" alt="User-Profile-Image">
+                                  <span id="NombreG1"></span>
+                                  <i class="ti-angle-down"></i>
+                              </a>
+                              <ul class="show-notification profile-notification">
+                                  <li class="waves-effect waves-light">
+                                      <a href="configuraciones.html">
+                                          <i class="ti-settings"></i> Configuración
+                                      </a>
+                                  </li>
+                                  <li class="waves-effect waves-light">
+                                      <a href="miperfil.html">
+                                          <i class="ti-user"></i> Mi Perfil
+                                      </a>
+                                  </li>
+                                  
+                                  
+                                  <li class="waves-effect waves-light">
+                                      <a href="#" onclick="Salir();">
+                                          <i class="ti-layout-sidebar-left"></i> Salir
+                                      </a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+
+          <div class="pcoded-main-container">
+              <div class="pcoded-wrapper">
+                  <nav class="pcoded-navbar">
+                      <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                      <div class="pcoded-inner-navbar main-menu">
+                          <div class="">
+                              <div class="main-menu-header">
+                                  <img class="img-80 img-radius" id="Avatar2" src="assets/images/user.png" alt="User-Profile-Image">
+                                  <div class="user-details">
+                                      <span id="more-details" ><span id="NombreG"> </span> <i class="fa fa-caret-down"></i> </span>
+                                  </div>
+                              </div>
+        
+                              <div class="main-menu-content">
+                                  <ul>
+                                      <li class="more-details">
+                                          <a href="miperfil.html"><i class="ti-user"></i>Mi Perfil</a>
+                                          <a href="configuraciones.html"><i class="ti-settings"></i>Configuración</a>
+                                          <a href="#" onclick="Salir();"><i class="ti-layout-sidebar-left" ></i>Salir</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          
+                          <ul class="pcoded-item pcoded-left-item">
+                              <li class="">
+                                  <a href="index.html" class="waves-effect waves-dark">
+                                      <span class="pcoded-micon"><i class="ti-home"></i><b></b></span>
+                                      <span class="pcoded-mtext" data-i18n="nav.dash.main">Inicio</span>
+                                      <span class="pcoded-mcaret"></span>
+                                  </a>
+                              </li>
+                              <li class="pcoded-hasmenu active pcoded-trigger">
+                                  <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                      <span class="pcoded-micon"><i class="ti-briefcase"></i></span>
+                                      <span class="pcoded-mtext"  data-i18n="nav.direccion">Dirección</span>
+                                      <span class="pcoded-mcaret"></span>
+                                  </a>
+                                  <ul class="pcoded-submenu">
+                                      <li class="pcoded-hasmenu pcoded-trigger">
+                                              <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                              <span class="pcoded-micon"><i class="ti-direction-alt"></i></span>
+                                              <span class="pcoded-mtext" data-i18n="nav.direccion.main">Contexto de la Organización</span>
+                                              <span class="pcoded-mcaret"></span>
+                                          </a>
+                                      
+                                            <ul class="pcoded-submenu">
+                                                <li class="">
+                                                    <a href="mvvp.html" class="waves-effect waves-dark">
+                                                        <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                        <span class="pcoded-mtext" data-i18n="nav.direccion.contexto.mvvp">Misión, Visión, Valores, Política de calidad</span>
+                                                        <span class="pcoded-mcaret"></span>
+                                                    </a>
+                                                </li>
+
+                                                <li class=" ">
+                                                    <a href="objeind.html" class="waves-effect waves-dark">
+                                                        <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                        <span class="pcoded-mtext" data-i18n="nav.direccion.contexto.objeind">Objetivos e indicadores</span>
+                                                        <span class="pcoded-mcaret"></span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="">
+                                                    <a href="foda.html" class="waves-effect waves-dark">
+                                                        <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                        <span class="pcoded-mtext" data-i18n="nav.direccion.contexto.foda">FODA´s</span>
+                                                        <span class="pcoded-mcaret"></span>
+                                                    </a>
+                                                </li>
+
+                                                <li class=" active">
+                                                    <a href="pest.html" class="waves-effect waves-dark">
+                                                        <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                        <span class="pcoded-mtext" data-i18n="nav.direccion.contexto.pest">PEST</span>
+                                                        <span class="pcoded-mcaret"></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+
+                                      <li class=" ">
+                                          <a href="matrizcomunint.html" class="waves-effect waves-dark">
+                                              <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                              <span class="pcoded-mtext" data-i18n="nav.direccion.matrizcomun">Matriz de Comunicación Interna </span>
+                                              <span class="pcoded-mcaret"></span>
+                                          </a>
+                                      </li>
+<li class=" ">
+                                          <a href="matrizcomunext.html" class="waves-effect waves-dark">
+                                              <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                              <span class="pcoded-mtext" data-i18n="nav.direccion.matrizcomun">Matriz de Comunicación Externa </span>
+                                              <span class="pcoded-mcaret"></span>
+                                          </a>
+                                      </li>
+                                      <li class=" ">
+                                          <a href="partesinte.html" class="waves-effect waves-dark">
+                                              <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                              <span class="pcoded-mtext" data-i18n="nav.direccion.partesinte">Partes interesadas</span>
+                                              <span class="pcoded-mcaret"></span>
+                                          </a>
+                                      </li>
+                                      <li class=" ">
+                                          <a href="contrlcambios.html" class="waves-effect waves-dark">
+                                              <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                              <span class="pcoded-mtext" data-i18n="nav.direccion.contrlcambios">Control de cambios</span>
+                                              <span class="pcoded-mcaret"></span>
+                                          </a>
+                                      </li>
+                                      <li class=" ">
+                                          <a href="revdirec.html" class="waves-effect waves-dark">
+                                              <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                              <span class="pcoded-mtext" data-i18n="nav.direccion.revdirec">Revisión por la dirección</span>
+                                              <span class="pcoded-mcaret"></span>
+                                          </a>
+                                      </li>
+
+
+
+                                      
+                                      
+
+                                      <li class="pcoded-hasmenu">
+                                        <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="ti-direction-alt"></i></span>
+                                            <span class="pcoded-mtext" data-i18n="nav.direccion.encuestas.main">Encuestas</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    
+                                          <ul class="pcoded-submenu">
+                                              <li class=" ">
+                                                  <a href="partint.html" class="waves-effect waves-dark">
+                                                      <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                      <span class="pcoded-mtext" data-i18n="nav.direccion.encuestas.partint">Partes Interesadas</span>
+                                                      <span class="pcoded-mcaret"></span>
+                                                  </a>
+                                              </li>
+
+                                              <li class=" ">
+                                                  <a href="conciencomunpol.html" class="waves-effect waves-dark">
+                                                      <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                      <span class="pcoded-mtext" data-i18n="nav.direccion.encuestas.objeind">Conciencia y Comunicación de la política</span>
+                                                      <span class="pcoded-mcaret"></span>
+                                                  </a>
+                                              </li>
+
+                                              <li class=" ">
+                                                  <a href="provee.html" class="waves-effect waves-dark">
+                                                      <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                      <span class="pcoded-mtext" data-i18n="nav.direccion.encuestas.provee">Proveedores</span>
+                                                      <span class="pcoded-mcaret"></span>
+                                                  </a>
+                                              </li>
+                                          </ul>
+                                      </li>
+
+
+
+
+
+
+
+
+                                    
+                
+                                  </ul>
+                              </li>
+
+
+
+
+
+
+
+
+                            <li class="pcoded-hasmenu">
+                                <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="ti-check-box"></i></span>
+                                    <span class="pcoded-mtext"  data-i18n="nav.calidad">Calidad</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                                <ul class="pcoded-submenu">
+
+                                    <li class=" ">
+                                        <a href="audito.html" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                            <span class="pcoded-mtext" data-i18n="nav.calidad.audito">Auditorias </span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="acccorre.html" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                            <span class="pcoded-mtext" data-i18n="nav.calidad.acccorre">Acciones Correctivas</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="accmejora.html" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                            <span class="pcoded-mtext" data-i18n="nav.calidad.accmejora">Acciones de mejora</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="infdoc.html" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                            <span class="pcoded-mtext" data-i18n="nav.calidad.infdoc">Información documentada</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+
+                                    <li class=" ">
+                                        <a href="saticli.html" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                            <span class="pcoded-mtext" data-i18n="nav.calidad.saticli">Satisfacción del cliente</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+
+
+
+
+                            <li class="pcoded-hasmenu">
+                                <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="ti-settings"></i></span>
+                                    <span class="pcoded-mtext"  data-i18n="nav.proceso">Proceso</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                                <ul class="pcoded-submenu">
+
+                                    <li class=" ">
+                                        <a href="mapaproc.html" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                            <span class="pcoded-mtext" data-i18n="nav.proceso.mapaproc">Mapa de procesos </span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="diagtor.html" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                            <span class="pcoded-mtext" data-i18n="nav.proceso.diagtor">Diagrama de tortuga</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="matriesgo.html" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                            <span class="pcoded-mtext" data-i18n="nav.proceso.matriesgo">Matriz de riesgos</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="its.html" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                            <span class="pcoded-mtext" data-i18n="nav.proceso.its">IT´s</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+
+                                    <li class=" ">
+                                        <a href="controlcambiospro.html" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                            <span class="pcoded-mtext" data-i18n="nav.proceso.controlcambiospro">Control de cambios </span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <li class="pcoded-hasmenu">
+                                <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="ti-package"></i></span>
+                                    <span class="pcoded-mtext"  data-i18n="nav.recursos">Recursos </span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                                <ul class="pcoded-submenu">
+                                    <li class="pcoded-hasmenu">
+                                            <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="ti-direction-alt"></i></span>
+                                            <span class="pcoded-mtext" data-i18n="nav.recursos.humanos.main">Humanos</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    
+                                          <ul class="pcoded-submenu">
+                                              <li class=" ">
+                                                  <a href="organigrama.html" class="waves-effect waves-dark">
+                                                      <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                      <span class="pcoded-mtext" data-i18n="nav.recursos.humanos.organigrama">Organigrama</span>
+                                                      <span class="pcoded-mcaret"></span>
+                                                  </a>
+                                              </li>
+
+                                              <li class=" ">
+                                                  <a href="perfilpuestos.html" class="waves-effect waves-dark">
+                                                      <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                      <span class="pcoded-mtext" data-i18n="nav.recursos.humanos.perfilpuestos">Perfil de puestos</span>
+                                                      <span class="pcoded-mcaret"></span>
+                                                  </a>
+                                              </li>
+
+                                              <li class=" ">
+                                                  <a href="controlexpe.html" class="waves-effect waves-dark">
+                                                      <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                      <span class="pcoded-mtext" data-i18n="nav.recursos.humanos.controlexpe">Control de expedientes</span>
+                                                      <span class="pcoded-mcaret"></span>
+                                                  </a>
+                                              </li>
+
+                                              <li class=" ">
+                                                  <a href="ambipalapro.html" class="waves-effect waves-dark">
+                                                      <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                      <span class="pcoded-mtext" data-i18n="nav.recursos.humanos.ambipalapro">Ambiente para los procesos</span>
+                                                      <span class="pcoded-mcaret"></span>
+                                                  </a>
+                                              </li>
+
+                                              <li class=" ">
+                                                <a href="procapacitacion.html" class="waves-effect waves-dark">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.recursos.humanos.procapacitacion">Programa de capacitación</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+
+                                            
+                                          </ul>
+                                      </li>
+
+
+                                    
+
+
+
+                                    
+                                    
+
+                                    <li class="pcoded-hasmenu">
+                                      <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                          <span class="pcoded-micon"><i class="ti-direction-alt"></i></span>
+                                          <span class="pcoded-mtext" data-i18n="nav.recursos.materiales.main">Materiales</span>
+                                          <span class="pcoded-mcaret"></span>
+                                      </a>
+                                  
+                                        <ul class="pcoded-submenu">
+                                            <li class=" ">
+                                                <a href="seleccprovee.html" class="waves-effect waves-dark">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.recursos.materiales.seleccprovee">Selección de proveedores</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+
+                                            <li class=" ">
+                                                <a href="evaluacionpro.html" class="waves-effect waves-dark">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.recursos.materiales.evaluacionpro">Evaluación de proveedores</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+
+                                            <li class=" ">
+                                                <a href="contrlmanteni.html" class="waves-effect waves-dark">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.recursos.materiales.contrlmanteni">Control de mantenimiento en general</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+
+
+
+
+
+
+
+                                  
+              
+                                </ul>
+                            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            
+                          </ul>
+
+
+
+
+                          </ul>
+                      </div>
+                  </nav>
+                  <div class="pcoded-content">
+                      <!-- Page-header start -->
+                      <div class="page-header">
+                          <div class="page-block">
+                              <div class="row align-items-center">
+                                  <div class="col-md-8">
+                                      <div class="page-header-title">
+                                          <h5 class="m-b-10" id="nombredoc2">...</h5>
+                                          <p class="m-b-0"></p>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <ul class="breadcrumb-title">
+                                          <li class="breadcrumb-item">
+                                              <a href="index.html"> <i class="fa fa-home"></i> </a>
+                                          </li>
+                                          <li class="breadcrumb-item"><a href="index.html">Inicio</a>
+                                          </li>
+                                          <li class="breadcrumb-item"><a >Dirección</a>
+                                          </li>
+                                          <li class="breadcrumb-item"><a >Contexto de la Organización</a>
+                                          </li>
+                                          <li class="breadcrumb-item"><a href="pest.html">PEST</a>
+                                          </li>
+                                          <li class="breadcrumb-item"><a href="#!" id="nombredoc">...</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Page-header end -->
+                        <div class="pcoded-inner-content">
+                            <!-- Main-body start -->
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <!-- Page-body start -->
+                                    <div class="page-body">
+                                        <div class="row">
+
+                                            <div class="col-xl-12">
+
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <button class="btn btn-mat waves-effect waves-light btn-primary btn-sm" data-toggle="modal" data-target="#myModal2"><i class="fa fa-edit"></i>Editar</button>
+                                                        <button class="btn btn-mat waves-effect waves-light btn-danger btn-sm" onclick="eliminartodo();" ><i class="fa fa-close"></i>Eliminar</button>
+                                                        
+                                                    </div>
+                                                    <div class="card-block accordion-block" >
+                                                        
+                                                        <div id="contenido">
+                                                            <div class="row">
+                                                                <div class="col-sm-2"></div>
+                                                                <div class="col-sm-8">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table table-bordered" >
+                                                                            
+                                                                            <tbody>
+                                                                                <tr >
+                                                                                    <th class="bg-primary font-weight-bolder text-center"><h4 style="margin-bottom: 0;"> ÁREA:</h4></th>
+                                                                                    <td class="text-black text-center" id="area">..</td>
+                                                                                    
+                                                                                </tr>
+                                                                                
+                                                                                <tr >
+                                                                                    <th class="bg-primary font-weight-bolder text-center" >Fecha de Elaboración:</th>
+                                                                                    <td class="text-black text-center" id="fecha">..</td>
+                                                                                    
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2"></div>
+                                                            </div>
+
+
+                                                            <div class="row">
+                                                                <div class="col-sm-2"></div>
+                                                                <div class="col-sm-8">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table table-bordered" >
+                                                                            
+                                                                            <tbody>
+                                                                                <tr >
+                                                                                    <th class="bg-primary font-weight-bolder text-center" colspan="2">TABLA DE CLASIFICACION</th>
+                                                                                    
+                                                                                    
+                                                                                </tr>
+                                                                                <tr >
+                                                                                    <th class="bg-primary font-weight-bolder">3</th>
+                                                                                    <td class="text-black text-center">Ideal - Mejor Imposible - Excelente impresión- Excede las expectativas- Genial</td>
+                                                                                    
+                                                                                </tr>
+                                                                                
+                                                                                <tr >
+                                                                                    <th class="bg-primary font-weight-bolder">2</th>
+                                                                                    <td class="text-black text-center">Por encima de la media - Mejor que la mayoría - No es habitual</td>
+                                                                                    
+                                                                                </tr>
+
+                                                                                <tr >
+                                                                                    <th class="bg-primary font-weight-bolder">1</th>
+                                                                                    <td class="text-black text-center">En la media - Suficiente - Expectativa mejorable</td>
+                                                                                    
+                                                                                </tr>
+
+                                                                                <tr >
+                                                                                    <th class="bg-primary font-weight-bolder">0</th>
+                                                                                    <td class="text-black text-center">No buena,  puede generar problemas - Se puede mejorar</td>
+                                                                                    
+                                                                                </tr>
+
+
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2"></div>
+                                                            </div>
+
+
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table table-bordered" >
+                                                                            
+                                                                            <tbody id="tbodyDebilidades">
+                                                                                <tr >
+                                                                                    <th class="bg-primary font-weight-bolder text-center" colspan="2"><h2 style="margin-bottom: 0;"> Factores Políticos</h4></th>
+                                                                                        <th class="bg-primary font-weight-bolder text-center">Peso (suma<br>100)</th>
+                                                                                        <th class="bg-primary font-weight-bolder text-center">Valora-ción<br>I1 (Nosotros)<br>[de 0 a 3]</th>
+                                                                                        <th class="bg-primary font-weight-bolder text-center">P x I1<br>(Nosotros)</th>
+                                                                                        
+                                                                                    
+                                                                                    
+                                                                                </tr>
+                                                                                <tr data-toggle="modal" data-target="#myModal" style="cursor: pointer;">
+                                                                                    <th class="text-black font-weight-bolder text-center" >1</th>
+                                                                                    <td class="text-black text-center">Cargando...</td>
+                                                                                    <th class="text-black text-center"></th>
+                                                                                    <th class="text-black text-center"></th>
+                                                                                    <th class="text-black font-weight-bolder text-center"></th>
+                                                                                    
+                                                                                </tr>
+                                                                                
+                                                                                <tr >
+                                                                                    <th class="text-black text-center"></th>
+                                                                                    <td class="bg-primary font-weight-bolder text-center">Suma</td>
+                                                                                    <th class="text-black text-center font-weight-bolder"></th>
+                                                                                    <th class="text-black text-center"></th>
+                                                                                    <th class="text-black text-center font-weight-bolder"></th>
+                                                                                    
+                                                                                </tr>
+
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table table-bordered" >
+                                                                            
+                                                                            <tbody id="tbodyAmenazas">
+                                                                                <tr >
+                                                                                    <th class="bg-primary font-weight-bolder text-center" colspan="2"><h2 style="margin-bottom: 0;"> Factores Económicos</h4></th>
+                                                                                    <th class="bg-primary font-weight-bolder text-center">Peso (suma<br>100)</th>
+                                                                                    <th class="bg-primary font-weight-bolder text-center">Valora-ción<br>I1 (Nosotros)<br>[de 0 a 3]</th>
+                                                                                    <th class="bg-primary font-weight-bolder text-center">P x I1<br>(Nosotros)</th>
+                                                                                    
+                                                                                    
+                                                                                </tr>
+                                                                                <tr data-toggle="modal" data-target="#myModal" style="cursor: pointer;">
+                                                                                    <th class="text-black font-weight-bolder text-center" >1</th>
+                                                                                    <td class="text-black text-center">Cargando...</td>
+                                                                                    <th class="text-black text-center"></th>
+                                                                                    <th class="text-black text-center"></th>
+                                                                                    <th class="text-black font-weight-bolder text-center"></th>
+                                                                                    
+                                                                                </tr>
+                                                                                
+                                                                                <tr >
+                                                                                    <th class="text-black text-center"></th>
+                                                                                    <td class="bg-primary font-weight-bolder text-center">Suma</td>
+                                                                                    <th class="text-black text-center font-weight-bolder"></th>
+                                                                                    <th class="text-black text-center"></th>
+                                                                                    <th class="text-black text-center font-weight-bolder"></th>
+                                                                                    
+                                                                                </tr>
+
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-6">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table table-bordered" >
+                                                                            <tbody id="tbodyFortalezas">
+                                                                                <tr >
+                                                                                    <th class="bg-primary font-weight-bolder text-center" colspan="2"><h2 style="margin-bottom: 0;"> Factores Sociales</h4></th>
+                                                                                    <th class="bg-primary font-weight-bolder text-center">Peso (suma<br>100)</th>
+                                                                                    <th class="bg-primary font-weight-bolder text-center">Valora-ción<br>I1 (Nosotros)<br>[de 0 a 3]</th>
+                                                                                    <th class="bg-primary font-weight-bolder text-center">P x I1<br>(Nosotros)</th>
+                                                                                    
+                                                                                    
+                                                                                </tr>
+                                                                                <tr data-toggle="modal" data-target="#myModal" style="cursor: pointer;">
+                                                                                    <th class="text-black font-weight-bolder text-center" >1</th>
+                                                                                    <td class="text-black text-center">Cargando...</td>
+                                                                                    <th class="text-black text-center"></th>
+                                                                                    <th class="text-black text-center"></th>
+                                                                                    <th class="text-black font-weight-bolder text-center"></th>
+                                                                                    
+                                                                                </tr>
+                                                                                <tr >
+                                                                                    <th class="text-black text-center"></th>
+                                                                                    <td class="bg-primary font-weight-bolder text-center">Suma</td>
+                                                                                    <th class="text-black text-center font-weight-bolder"></th>
+                                                                                    <th class="text-black text-center"></th>
+                                                                                    <th class="text-black text-center font-weight-bolder"></th>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-6">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table table-bordered" >
+                                                                            <tbody id="tbodyOportunidades">
+                                                                                <tr >
+                                                                                    <th class="bg-primary font-weight-bolder text-center" colspan="2"><h2 style="margin-bottom: 0;"> Factores Tecnológicos</h4></th>
+                                                                                    <th class="bg-primary font-weight-bolder text-center">Peso (suma<br>100)</th>
+                                                                                    <th class="bg-primary font-weight-bolder text-center">Valora-ción<br>I1 (Nosotros)<br>[de 0 a 3]</th>
+                                                                                    <th class="bg-primary font-weight-bolder text-center">P x I1<br>(Nosotros)</th>
+                                                                                </tr>
+                                                                                <tr data-toggle="modal" data-target="#myModal" style="cursor: pointer;">
+                                                                                    <th class="text-black font-weight-bolder text-center">1</th>
+                                                                                    <td class="text-black text-center">Cargando...</td>
+                                                                                    <th class="text-black text-center"></th>
+                                                                                    <th class="text-black text-center"></th>
+                                                                                    <th class="text-black font-weight-bolder text-center"></th>
+                                                                                </tr>
+                                                                                <tr >
+                                                                                    <th class="text-black text-center"></th>
+                                                                                    <td class="bg-primary font-weight-bolder text-center">Suma</td>
+                                                                                    <th class="text-black text-center font-weight-bolder"></th>
+                                                                                    <th class="text-black text-center"></th>
+                                                                                    <th class="text-black text-center font-weight-bolder"></th>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            
+
+
+
+
+                                                            
+                                                            <!-- Basic Form Inputs card end -->
+                                                                        
+                                                                        <!-- Input Alignment card end -->
+
+
+
+
+
+
+
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Page body end -->
+                                                        </div>
+                                                    </div>
+                                                    <!-- Main-body end -->
+                                                    <div id="styleSelector">
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+
+
+
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- Page-body end -->
+                                </div>
+                                <div id="styleSelector"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title" id="titulomodal">Agregar</h4>
+              <button type="button" id="cerrarmodal" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="text-primary" id="Cargando" style="display: none;">Cargando...</div>
+                <div id="modalcargado">
+                    <div class="form-group">
+                        <label for="tipo">Tipo:</label>
+                        <select  class="form-control" name="tipo" id="tipo">
+                            <option value="Factores Políticos">Factores Políticos</option>
+                            <option value="Factores Económicos">Factores Económicos</option>
+                            <option value="Factores Sociales">Factores Sociales</option>
+                            <option value="Factores Tecnológicos">Factores Tecnológicos</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="texto">Texto:</label>
+                        <textarea class="form-control" placeholder="Escribe el texto" id="texto" rows="3"> </textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="peso">Peso:</label>
+                        <input type="number" class="form-control" placeholder="Escribe el peso" id="peso">
+                    </div>
+                    <div class="form-group">
+                        <label for="valoracion">Valoración:</label>
+                        <input type="number" class="form-control" placeholder="Escribe el valoracion" id="valoracion">
+                    </div>
+                </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button class="btn btn-danger btn-sm" id="btneliminarelem" onclick="eliminar_elemento();"><span class="ti-close" > </span>  Eliminar </button>  
+                <button class="btn btn-primary btn-sm" id="btnguardar" onclick="gurdar();"><span class="ti-save" > </span>  Guardar </button>  
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+
+
+      <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Editar</h4>
+              <button type="button" id="cerrarmodalfoda" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="nombreinput">Nombre:</label>
+                    <input type="text" class="form-control" placeholder="Escribe el nombre" id="nombreinput">
+                  </div>
+                  <div class="form-group">
+                    <label for="areainput">Área:</label>
+                    <input type="text" class="form-control" placeholder="Escribe el área" id="areainput">
+                  </div>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-sm" id="btnguardarfoda" onclick="gurdarfoda();"><span class="ti-save" > </span>  Crear </button>  
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    
+    <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>     <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js "></script>     <script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>     <script type="text/javascript" src="assets/js/bootstrap/js/bootstrap.min.js "></script>
+<!-- waves js -->
+<script src="assets/pages/waves/js/waves.min.js"></script>
+<!-- jquery slimscroll js -->
+<script type="text/javascript" src="assets/js/jquery-slimscroll/jquery.slimscroll.js "></script>
+<!-- modernizr js -->
+    <script type="text/javascript" src="assets/js/SmoothScroll.js"></script>     <script src="assets/js/jquery.mCustomScrollbar.concat.min.js "></script>
+<!-- notification js -->
+<script type="text/javascript" src="assets/js/bootstrap-growl.min.js"></script>
+<script type="text/javascript" src="assets/pages/notification/notification.js"></script>
+<script src="assets/js/pcoded.min.js"></script>
+<script src="assets/js/vertical-layout.min.js "></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Custom js -->
+<script type="text/javascript" src="assets/js/script.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>  
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+    <script type="text/javascript" src="assets/js/pages/config.js"></script>
+
+    <script type="text/javascript" src="assets/js/pages/funciones.js"></script>
+    <script type="text/javascript" src="assets/js/pages/documentopest.js"></script>
+
+    
+</body>
+
+</html>
