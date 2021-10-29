@@ -33,7 +33,12 @@
         }
 
         if (document.getElementById("NombreG")){
+          if(res.displayName==null){
+            document.getElementById("NombreG").innerHTML = res.email;
+          }else{
             document.getElementById("NombreG").innerHTML = res.displayName+"<br>"+res.email;
+          }
+            
         }else{
             // console.log("NombreG");
         }
