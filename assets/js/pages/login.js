@@ -30,13 +30,33 @@ if(token=='rM7XUHwAgLWmQmEhAJ4gFT9UOZh1'){
     var password = getParameterByName('password');
     firebase.auth().signInWithEmailAndPassword(email,password).then(res=>{
             //console.log(res);
-            document.location.href="index.html";
+            // document.location.href="index.html";
 
-            // if(res.user.photoURL!=null){
-            //     document.getElementById("fotoUsuario").src=res.user.photoURL;
-            // }else{
-                // document.getElementById("fotoUsuario").src="img/noFoto.jpg";
-            // }
+
+            var user=res.user;
+
+            return firebase.firestore().collection("Usuarios").doc(user.uid)
+            .get().then(el=>{
+                var inf=el.data();
+                console.log(user.uid);
+                if(inf==null || inf==undefined){
+                    firebase.firestore().collection("Usuarios").doc(user.uid).set({
+                        email:user.email,
+                        displayName:user.displayName,
+                        provider:res.additionalUserInfo.providerId,
+                        bd:""
+                    })
+                    .then(function() {
+                        document.location.href="index.html";
+                    })
+                    .catch(function(error) {
+                        console.error(error);
+                    });
+
+                }else{
+                    document.location.href="index.html";
+                }
+            });
        }).catch(err=>{
            console.log(err);
            //alert("Ocurrio un error");
@@ -63,7 +83,7 @@ function createUser(){
 function authGoogle(){
     const providerGoogle= new firebase.auth.GoogleAuthProvider();
     firebase.auth().signInWithPopup(providerGoogle).then(res=>{
-        console.log(res);
+        // console.log(res);
         var user=res.user;
 
         return firebase.firestore().collection("Usuarios").doc(user.uid)

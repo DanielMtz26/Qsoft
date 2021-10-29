@@ -12,10 +12,9 @@
     
   function varAuntenticacion() {
     firebase.auth().onAuthStateChanged(res => {
-        if (res == null) {
+        if (res == null){
             document.location.href = "login.html";
           }
-
           // console.log(res);
         
         idusuario=res.uid;
