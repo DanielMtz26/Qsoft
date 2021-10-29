@@ -32,16 +32,16 @@ if(token=='rM7XUHwAgLWmQmEhAJ4gFT9UOZh1'){
             //console.log(res);
             document.location.href="index.html";
 
-            if(res.user.photoURL!=null){
-                document.getElementById("fotoUsuario").src=res.user.photoURL;
-            }else{
-                document.getElementById("fotoUsuario").src="img/noFoto.jpg";
-            }
+            // if(res.user.photoURL!=null){
+            //     document.getElementById("fotoUsuario").src=res.user.photoURL;
+            // }else{
+                // document.getElementById("fotoUsuario").src="img/noFoto.jpg";
+            // }
        }).catch(err=>{
            console.log(err);
            //alert("Ocurrio un error");
            document.getElementById("alertErrorLogueo").style.display="block";
-           document.getElementById("alertErrorLogueo").innerHTML=err;
+           document.getElementById("errorText").innerHTML=err;
        });
 }
 
