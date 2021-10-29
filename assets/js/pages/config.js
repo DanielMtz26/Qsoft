@@ -21,13 +21,13 @@
         idusuario=res.uid;
 
       if(res.photoURL!=null && document.getElementById("Avatar1")){
-          document.getElementById("Avatar1").src=res.photoURL;
+          // document.getElementById("Avatar1").src=res.photoURL;
         }else{
             // console.log("Avatar1");
         }
 
       if(res.photoURL!=null && document.getElementById("Avatar2")){
-        document.getElementById("Avatar2").src=res.photoURL;
+        // document.getElementById("Avatar2").src=res.photoURL;
         }else{
             // console.log("Avatar2");
         }
