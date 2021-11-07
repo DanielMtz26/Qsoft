@@ -1,6 +1,23 @@
 window.onload=function(){
     varAuntenticacion();
+    precioDolar();
 }
+
+function precioDolar(){
+    $.ajax({
+        url: 'https://www.banxico.org.mx/SieAPIRest/service/v1/series/SF43718/datos/oportuno?token=0f157cbb11d2d3c6b6304ae15f69288ba1175430f947fc5ec7c574cb4558ed28',
+        type: 'GET',
+        dataType: 'JSON',
+        data:{
+            
+        },
+    }).done(function(respuesta){
+        document.getElementById("USD").innerHTML=respuesta.bmx.series[0].datos[0].dato;
+    }).fail(function(){
+        console.log("error");
+    });
+}
+
 
 graficas=document.getElementById("graficas");
 
