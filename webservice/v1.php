@@ -5,11 +5,6 @@ $hoy = date("Y-m-d");
 $result = file_get_contents("tokens.json");
 $array = json_decode($result, true);
 
-// var_dump($array);
-
-// echo "<br>";
-// echo sizeof($array);
-
 if(isset($_REQUEST['token'])){
     for($i=0;$i<sizeof($array);$i++){
         if($_REQUEST['token']==$array[$i]['token']){
@@ -20,7 +15,6 @@ if(isset($_REQUEST['token'])){
                 "Fecha": "'.$hoy.'"
             }';
 
-            echo $data;
             $url="https://mvbroker-409a7-default-rtdb.firebaseio.com/usuarios.json";
             
             $ch=curl_init();    
@@ -44,15 +38,4 @@ if(isset($_REQUEST['token'])){
     $respuesta['Error']="Es nesesario un token autorizado para hacer uso de este servicio.";
     print json_encode($respuesta);
 }
-
-
-// $tokens=json_decode($jsonString, true);
-
-// // print_r($tokens);
-
-// foreach ($tokens as $key) {
-//     echo $key["token"];
-// }
-
-
 ?>
